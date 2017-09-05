@@ -253,9 +253,9 @@ touch ilikemyname.txt
 for i in `seq 1000000`; do echo "Alper Kinaci" $i >> ilikemyname.txt; done
 vim ilikemyname.txt
 
--- Go to the command-line mode (hit "esc" then ":"), two alternatives after that: 
-1- write 783219 and hit enter/return, 
-2- write ?783219 and hit enter/return. Hit d two times
+#-- Go to the command-line mode (hit "esc" then ":"), two alternatives after that: 
+#1- write 783219 and hit enter/return, 
+#2- write ?783219 and hit enter/return. Hit d two times
 
 ```
 
@@ -263,56 +263,56 @@ vim ilikemyname.txt
 
 
 ```bash
--- Go to the command-line mode (hit "esc" then ":") and write set nu, hit enter/return
+#-- Go to the command-line mode (hit "esc" then ":") and write set nu, hit enter/return
 ```
 
 **IV.03)** Undo your deletion.
 
 
 ```bash
--- Hit "esc" to go to the normal mode and hit "u"
+#-- Hit "esc" to go to the normal mode and hit "u"
 ```
 
 **IV.04)** Only erase the number after your name on line 783219.
 
 
 ```bash
--- Again you have many options here:
+#-- Again you have many options here:
 
-1- Hit "esc" to switch to the normal mode, move the cursor to the beginning of the number and 
+#1- Hit "esc" to switch to the normal mode, move the cursor to the beginning of the number and 
 hit "x" 6 times to erase the number on that line on character at a time
 
-OR
+#or
 
-2- Hit "esc" and "6" and then "x" to erase 6 characters. There are several more ways.
+#1- Hit "esc" and "6" and then "x" to erase 6 characters. There are several more ways.
 ```
 
 **IV.05)** While viewing ilikemyname.txt with VIM editor, go to the last line and enter the text "Last" before your name. Then go to the first line of the file and enter the text "First" after your name.
 
 
 ```bash
--- Follow the steps below
+#-- Follow the steps below
 
-1- Hit "esc" and ":" to go to the command-line mode
-2- Write "$", hit enter/return
-3- Hit "i" to enter insert mode and type "Last" before your name
-4- Hit "esc" and ":" to go to the command-line mode
-5- Write "0", hit enter/return
-6- Hit "i" to enter insert mode, move the cursor after your name and type "First"
+#1- Hit "esc" and ":" to go to the command-line mode
+#2- Write "$", hit enter/return
+#3- Hit "i" to enter insert mode and type "Last" before your name
+#4- Hit "esc" and ":" to go to the command-line mode
+#5- Write "0", hit enter/return
+#6- Hit "i" to enter insert mode, move the cursor after your name and type "First"
 ```
 
 **IV.06)** Save the file, then save the file as "ilikemayname_bckp.txt" and quit to command line.
 
 
 ```bash
--- Follow the steps below:
+#-- Follow the steps below:
 
-1- Hit "esc" and ":" to go to the command-line mode
-2- Write "w", hit enter/return. The file is saved
-3- Hit "esc" and ":" to go to the command-line mode
-4- Write "w ilikemayname_bckp.txt", hit enter/return. You created ilikemayname_bckp.txt
-5- Hit "esc" and ":" to go to the command-line mode
-6- Write "wq", hit enter/return to save and quit
+#1- Hit "esc" and ":" to go to the command-line mode
+#2- Write "w", hit enter/return. The file is saved
+#3- Hit "esc" and ":" to go to the command-line mode
+#4- Write "w ilikemayname_bckp.txt", hit enter/return. You created ilikemayname_bckp.txt
+#5- Hit "esc" and ":" to go to the command-line mode
+#6- Write "wq", hit enter/return to save and quit
 ```
 
 **IV.07)** Open "ilikemyname.txt" and "ilikemayname_bckp.txt" both in a single VIM window side-by-side. Delete the first 134000 lines in "ilikemyname.txt". Delete your name in all lines of "ilikemayname_bckp.txt"
@@ -321,18 +321,18 @@ OR
 ```bash
 vim -O ilikemyname.txt ilikemayname_bckp.txt
 
--- The command above will open 2 files in one VIM editor window. Now, follow the step below:
+#-- The command above will open 2 files in one VIM editor window. Now, follow the step below:
 
-1- Make sure the cursor is on ilikemyname.txt tab
-2- Hit "esc" to go to normal mode
-3- Write 134000 and hit "d" 2 times. 134K lines deleted
-4- To move the cursor to ilikemayname_bckp.txt tab hit "esc" (normal mode) and do "Ctrl+w" and hit "w" again.
-5- Hit "esc" and ":" to go to the command-line mode
-6- Write %s/Your Name//g, hit enter/return. All your names are deleted from ilikemayname_bckp.txt tab
-7- Hit "esc" and ":" to go to the command-line mode
-8- Write "wq", hit enter/return to save and quit rom ilikemayname_bckp.txt tab
-9- Hit "esc" and ":" to go to the command-line mode
-10- Write "wq", hit enter/return to save and quit
+#1- Make sure the cursor is on ilikemyname.txt tab
+#2- Hit "esc" to go to normal mode
+#3- Write 134000 and hit "d" 2 times. 134K lines deleted
+#4- To move the cursor to ilikemayname_bckp.txt tab hit "esc" (normal mode) and do "Ctrl+w" and hit "w" again.
+#5- Hit "esc" and ":" to go to the command-line mode
+#6- Write %s/Your Name//g, hit enter/return. All your names are deleted from ilikemayname_bckp.txt tab
+#7- Hit "esc" and ":" to go to the command-line mode
+#8- Write "wq", hit enter/return to save and quit rom ilikemayname_bckp.txt tab
+#9- Hit "esc" and ":" to go to the command-line mode
+#10- Write "wq", hit enter/return to save and quit
 
 ```
 
