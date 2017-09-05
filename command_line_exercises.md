@@ -5,7 +5,7 @@
 ### I. Math with Bash
 
 **I.01)** Define two variables, var1=88 and var2=71. Print out (var1+var2), (var1*var2), (var1/var2), (var1%var2).<br>
-(Hint: try echoing \``$((var1+var2))`\`      )
+(Hint: try echoing `$((var1+var2))`      )
 
 
 ```bash
@@ -26,7 +26,7 @@
 
 ```
 
-**I.04)** An easy way to do floating point arithmetic in bash is to use \``bc`\` command. Explore the use of \``bc`\` and calculate var1+var2 if var1=88.3 and var2=73. Investigate the use of \``bc`\` on the web or man/help pages.
+**I.04)** An easy way to do floating point arithmetic in bash is to use `bc` command. Explore the use of `bc` and calculate var1+var2 if var1=88.3 and var2=73. Investigate the use of `bc` on the web or man/help pages.
 
 
 ```bash
@@ -43,7 +43,7 @@
 ```
 
 **II.02)** Split the unique_libs.txt to 4 files with more or less the same number of lines. The names of these split files should look like "splitlib_00", "splitlib_01", ... <br>
-(Hint: Explore the use of \``split`\` command but be careful to not to split an individual line between two files.)
+(Hint: Explore the use of `split` command but be careful to not to split an individual line between two files.)
 
 
 ```bash
@@ -51,7 +51,7 @@
 ```
 
 **II.03)** Copy the file "splitlib_01" to "splitlib_01_1" but omit the first three lines of "splitlib_01". <br>
-(Hint: You can do this with \``tail`\` command.)
+(Hint: You can do this with `tail` command.)
 
 
 ```bash
@@ -66,7 +66,7 @@
 ```
 
 **II.05)** Identify the names of the missing library names in "unique_libs_defected.txt" and their line numbers in "unique_libs.txt".<br>
-(Hint: Explore \``diff`\` command)
+(Hint: Explore `diff` command)
 
 
 
@@ -75,7 +75,7 @@
 ```
 
 **II.06)** Combine "splitlib_00" and "splitlib_01" into "pasted_libs.txt" which will include 2 columns: the library names from "splitlib_00" in the first column and library names from "splitlib_01" in the second column. The columns should be separated by comma. Do you have two columns in every line? <br>
-(Hint: Explore \``paste`\` command.)
+(Hint: Explore `paste` command.)
 
 
 ```bash
@@ -83,7 +83,7 @@
 ```
 
 **II.07)** Print out "splitlib_00" file in reverse order (i.e. bottom to top). <br>
-(Hint: You can use \``cat`\` command to print a file from top to bottom to the screen. What command could do the reverse?)
+(Hint: You can use `cat` command to print a file from top to bottom to the screen. What command could do the reverse?)
 
 
 ```bash
@@ -98,7 +98,7 @@
 ```
 
 **II.09)** List only the files in your current directory and any directories within with respect to their sizes. <br>
-(Hint: By combining \``find`\` and \``xargs`\` commands you can do this easily. Explore how to use  \``xargs`\` command.)
+(Hint: By combining `find` and `xargs` commands you can do this easily. Explore how to use  `xargs` command.)
 
 
 ```bash
@@ -112,14 +112,14 @@
 
 ```
 
-**II.11)** Combining \``find`\`, \``xargs`\` and \``grep`\` commands search for 'python' string in files with sizes greater than 1 kilobytes in the current working folder and all the folders within.
+**II.11)** Combining `find`, `xargs` and `grep` commands search for 'python' string in files with sizes greater than 1 kilobytes in the current working folder and all the folders within.
 
 
 ```bash
 
 ```
 
-**II.11)** Find all the files in "/lib64" folder which are larger than 4 Megabytes and show their sizes.  Do not let find to search files at deeper levels in "/lib64" folder hierarchy.
+**II.11)** Find all the files in "/lib64" folder which are larger than 4 Megabytes and show their sizes. Do not let `find` to search files at deeper levels in "/lib64" folder hierarchy.
 
 
 ```bash
@@ -142,10 +142,10 @@
 
 ```
 
-**III.03)** In addition to \``for`\`, loops can be created with \``while`\` statement in bash scripts. Using \``while`\` loop  repeat the last twp exercises i.e.:
+**III.03)** In addition to `for`, loops can be created with `while` statement in bash scripts. Using `while` loop  repeat the last twp exercises i.e.:
 - Write a loop command to print out integers 1 to 20 (increasing order) to the screen where each number should be printed out on a separate line.
 - Write a loop command to print out integers 20 to 1 in (decreasing order) to the screen where each number should be printed out on a separate line.<br>
-(Hint: When using  \``while`\`, the loop continues until some condition is false. The argument of the condition should change during the loop operation. Otherwise you would end up with an infinite loop. Explore \``while`\` loops on the web for further details.)
+(Hint: When using  `while`, the loop continues until some condition is false. The argument of the condition should change during the loop operation. Otherwise you would end up with an infinite loop. Explore `while` loops on the web for further details.)
 
 
 ```bash
@@ -173,14 +173,14 @@
 
 ```
 
-**III.07)** Do the same as operation in the last question  but this time use sed function witin the loop to access each line in "integers.txt". Search for sed function on the web or read \``man sed`\` or \``sed --help`\` for its use. Again, assume you don't know the number of lines in "integer.txt".
+**III.07)** Do the same as operation in the last question  but this time use sed function witin the loop to access each line in "integers.txt". Search for sed function on the web or read `man sed` or `sed --help` for its use. Again, assume you don't know the number of lines in "integer.txt".
 
 
 ```bash
 
 ```
 
-**III.08)** Write a loop to create 100 folders with names "1","2","3",...,"100". Echo which folder is created each step. Use \``seq`\` function to identify the values over which the loop iterates. Search for \``seq`\` function on the web or read \``man seq`\` or \``seq --help`\`.
+**III.08)** Write a loop to create 100 folders with names "1","2","3",...,"100". Echo which folder is created each step. Use `seq` function to identify the values over which the loop iterates. Search for `seq` function on the web or read `man seq` or `seq --help`.
 
 
 ```bash
@@ -194,8 +194,8 @@
 
 ```
 
-**III.10)** Write a loop to create 100 folders with names "001", "002",...,"100". Echo which folder is created each step. Again, use \``seq`\` function to identify the values over which the loop iterates. Search for \``seq`\` function  on the web or read \``man seq`\` or \``seq --help`\`. <br>
-(Hint: Read flags of \``seq`\` function.)
+**III.10)** Write a loop to create 100 folders with names "001", "002",...,"100". Echo which folder is created each step. Again, use `seq` function to identify the values over which the loop iterates. Search for `seq` function  on the web or read `man seq` or `seq --help`. <br>
+(Hint: Read flags of `seq` function.)
 
 
 ```bash
@@ -296,7 +296,7 @@
 ```
 
 **V.03)** Write a bash script to generate 1000 random numbers between 1 and 1000 and write them to a file. Find out how many unique numbers are obtained. <br>
-(Hint: Try issuing \``echo $RANDOM`\`, what do you get?)
+(Hint: Try issuing `echo $RANDOM`, what do you get?)
 
 
 ```bash
