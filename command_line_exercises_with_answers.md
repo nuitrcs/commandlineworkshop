@@ -130,7 +130,7 @@ for i in 00 01 02 03; do mv splitlib_$i ./slib_$i; done
 find . -size +1k -type f | xargs grep 'python'
 ```
 
-**II.11)** Find all the files in "/lib64" folder which are larger than 4 Megabytes and show their sizes.  Do not let find to search files at deeper levels in "/lib64" folder hierarchy.
+**II.12)** Find all the files in "/lib64" folder which are larger than 4 Megabytes and show their sizes.  Do not let find to search files at deeper levels in "/lib64" folder hierarchy.
 
 
 ```bash
