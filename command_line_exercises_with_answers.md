@@ -160,7 +160,7 @@ for ((i=20;i>0;i-=1)); do echo $i; done
 **III.03)** In addition to `for`, loops can be created with `while` statement in bash scripts. Using `while` loop  repeat the last twp exercises i.e.:
 - Write a loop command to print out integers 1 to 20 (increasing order) to the screen where each number should be printed out on a separate line.
 - Write a loop command to print out integers 20 to 1 in (decreasing order) to the screen where each number should be printed out on a separate line.<br>
-(Hint: When using  \``while`\`, the loop continues until some condition is false. The argument of the condition should change during the loop operation. Otherwise you would end up with an infinite loop. Explore `while` loops on the web for further details.)
+(Hint: When using  `while`, the loop continues until some condition is false. The argument of the condition should change during the loop operation. Otherwise you would end up with an infinite loop. Explore `while` loops on the web for further details.)
 
 
 ```bash
