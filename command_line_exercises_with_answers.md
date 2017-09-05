@@ -27,7 +27,7 @@ let var2+=2; echo $var2
 
 ```bash
 var1=88.3;var2=71;echo $((var1+var2))
--bash: 88.3: syntax error: invalid arithmetic operator (error token is ".3")
+#-bash: 88.3: syntax error: invalid arithmetic operator (error token is ".3")
 ```
 
 **I.04)** An easy way to do floating point arithmetic in bash is to use `bc` command. Explore the use of `bc` and calculate var1+var2 if var1=88.3 and var2=73. Investigate the use of `bc` on the web or man/help pages.
