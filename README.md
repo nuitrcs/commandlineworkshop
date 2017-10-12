@@ -11,6 +11,8 @@ Windows, which is not Unix based, does not come with a bash shell.  You can [dow
 
 # Resources
 
+## Tutorials
+
 [Software Carpentry Command Line Workshop](http://swcarpentry.github.io/shell-novice/): workshop materials you can work through on your own; there are videos of non-Northwestern instructors giving the workshop at: [video 1](https://www.youtube.com/watch?v=hAHJ0xGKMBk) and [video 2](https://www.youtube.com/playlist?list=PLkBeePYo-_VCXtMNGDboOL66V-P2-jAoM)
 
 [Code Academy: Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line): interactive, online tutorial; you can access the basic content for free, but not the exercises.  A good, quick introduction to the basics like listing files and changing directories.
@@ -23,7 +25,10 @@ Windows, which is not Unix based, does not come with a bash shell.  You can [dow
 
 [The Unix Workbench](http://seankross.com/the-unix-workbench/) by Sean Kross, teaches multiple technologies that you use from the command line, including git and bash scripting.
 
+## Cheat Sheets
+
 [Command Line Cheat Sheet](https://www.git-tower.com/blog/command-line-cheat-sheet/) with just the essentials, plus short explanations of key concepts
 
+[Linux Command Line Cheat Sheet](https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/): another useful version with the essentials, plus some intermediate commands
 
-
+[VI Cheat Sheet](https://www.gosquared.com/resources/vi-cheat-sheet/): for using the VI command line text editor
