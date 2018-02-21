@@ -189,7 +189,7 @@ cut -d , -f 2 animals | sort | uniq
 
 For `cut` the flags `-d` and `-f` indicate the delimiter and field
 
-# CONDITIONAL STATEMENTS
+# CONDITIONALS
 
 The basic conditional statement is `if`. Apart from syntax differences, the
 usage of the conditional construct is same as other languages.
@@ -678,8 +678,8 @@ history | tail -n 5 > redo-commands.sh
 ```
 
 As you see it is natural to stack more than one command
-in a script. So let's write a script that takes all
-*.pdb* files as input and
+in a script. So let's write a script that takes any number of files
+(i.e. *.pdb* files) in molecules folder as input and
 <br>
 1. Prints the file names that are provided 
 2. Prints out 4<sup>th</sup> line from each 
@@ -687,16 +687,24 @@ file
 3. Combines all files in "all_molecules.txt"
 4. Create copies with names "bckp-<file_name>"
 
+except if the file name is cubane.pdb
+
 ```bash
-vi myscript 
+vim myscript.sh
 ```
 
 Repeat the routine to insert save and
 quit in vim.
 
 ```bash
+#!/usr/bin/env bash
+
 for filename in "$@"
     do
+        if [ "$filename" == "cubane.pdb" ] ; then
+            continue
+        fi
+
         echo $filename
         head -n 4 $filename | tail -n 1
         cat $filename >> all_molecules.txt
@@ -704,12 +712,25 @@ for filename in "$@"
     done
 ```
 
+Issue the following command to see the result:
+```bash
+bash myscript.sh *.pdb
+```
+
+We can convert this script to an executable and run without identifying
+the interpreter (i.e. bash)
+
+```bash
+chmod u+x myscript.sh
+./myscript.sh *.pdb
+```
+
+
 Let's do some scripting with random numbers. 
 Write a bash script to generate 1000 random numbers 
 between 1 and 1000 and write them to a file. Find 
 out how many unique numbers are obtained. <br>
-(Hint: Try issuing \``echo $RANDOM`\, what do you get?)
-
+(Hint: Try issuing `echo $RANDOM`, what do you get?)
 
 ```bash
 #!/usr/bin/env bash
@@ -726,7 +747,7 @@ sort -n randomnumbers.txt | uniq | wc -l
 ```
 
 Write a script that creates a folder at every 2 seconds with names
-folder_01, ... folder_10 and let's you know when each folder is created
+folder_01, ... folder_10 and lets you know when each folder is created
 and the operation is ended. Finally, the script should show the created
 folders and then delete them.
 
