@@ -189,6 +189,38 @@ cut -d , -f 2 animals | sort | uniq
 
 For `cut` the flags `-d` and `-f` indicate the delimiter and field
 
+# CONDITIONAL STATEMENTS
+
+The basic conditional statement is `if`. Apart from syntax differences, the
+usage of the conditional construct is same as other languages.
+
+```bash
+myfavnumber=34
+
+if [ $myfavnumber -eq 34 ];then echo "My favorite number is $myfavnumber";fi
+```
+
+`if/then` statement can be extended to `if/then/else` or `if/then/elif/else`
+to test more conditions. Let's move to *data* folder.
+
+```bash
+cd data
+
+nrabbits=`cat animals.txt | grep rabbit | wc -l`
+# nrabbits=$(cat animals.txt | grep rabbit | wc -l)
+
+if [ $nrabbits -le 2 ]; then
+    echo 'Less than 3 rabbits'
+elif [ $nrabbits -gt 2 ] && [ $nrabbits -le 10 ]  ; then
+    echo '3 to 10 rabbits'
+else
+    echo 'More than 10 rabbits'
+fi
+
+echo "$nrabbits"
+```
+
+
 # LOOPS
 
 Loops will make your life very easy for repetitive tasks and automation. 
@@ -234,7 +266,7 @@ echo *.dat
 for filename in *.dat #hit enter#
 > do
 >     echo $filename
->     head -n 100 $filename | tail -n 20  #this selects the lines 81-100 
+>     head -n 100 $filename | tail -n 5  #this selects the lines 96-100
 > done
  ```
 
@@ -313,19 +345,21 @@ for temperature in 10 20 ; do
 > done
 ```
 
-There are other loop constructions such as `while` and `until`
+There are other loop constructions such as `while` and `until`.
 
 ```bash
 counter=0
-while [  $counter -lt 10 ]; do echo $counter; let counter=counter+1; done
- ``` 
- 
-`until` is very similar to `while`
+while [ $counter -lt 10 ]; do echo $counter; let counter=counter+1; done
+ ```
+
+`while` iterates as long as the condition is true where as `until` stops
+the loop when the condition is true
  
 ```bash
-until [  $counter -lt 2 ]; do echo $counter; let counter=counter-1; done
+counter=0
+until [ $counter -ge 10 ]; do echo $counter; let counter=counter-1; done
 echo $counter
-``` 
+```
 
 # FINDING THINGS
 
@@ -373,7 +407,7 @@ grep -n -w The haiku.txt
 grep -n The haiku.txt
 ```
 
-How do we find all The and the together? `-i` makes the search
+How do we find all "The" and "the" together? `-i` makes the search
 case-insensitive
 
 ```bash
@@ -381,8 +415,8 @@ grep -n -w the haiku.txt
 grep -n -w -i The haiku.txt
 ```
 
-How do we find all lines that do not contain the or
-The? `-v` flag inverts the selection
+How do we find all lines that do not contain "the" or
+"The"? `-v` flag inverts the selection
 
 ```bash
 grep -v -n -w -i The haiku.txt
@@ -467,7 +501,7 @@ We can also use `find` and `grep` in sequence to search
 for a pattern in certain files
  
 ```bash
-grep "FE" $(find .. -name '*.pdb')
+grep 'FE' $(find .. -name '*.pdb')
 ```
 
 # SHELL SCRIPTS
@@ -584,7 +618,7 @@ your future self) understand and use scripts. However
 each time you modify the script, you should check that 
 the comment is still accurate.
 
-Let's write another script to the number of lines 
+Let's write another script to find the number of lines
 for each file and sort them according to these
 numbers. 
 
@@ -689,4 +723,31 @@ for i in `seq 1000`
     done
 
 sort -n randomnumbers.txt | uniq | wc -l
+```
+
+Write a script that creates a folder at every 2 seconds with names
+folder_01, ... folder_10 and let's you know when each folder is created
+and the operation is ended. Finally, the script should show the created
+folders and then delete them.
+
+```bash
+#!/usr/bin/env bash
+counter=1
+
+while [ $counter -le 10 ]; do
+    sleep 2 #wait for 2 seconds
+    mkdir folder_$(printf "%02d" $counter)
+
+    if [ $counter -eq 10 ]; then
+        echo "Folder ${counter} has been created"
+        echo 'All folders are created'
+    else
+        echo "Folder ${counter} has been created"
+    fi
+
+    let counter=counter+1
+done
+
+ls -al | grep folder_
+rm -Rf folder_*
 ```
