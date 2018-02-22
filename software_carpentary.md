@@ -192,7 +192,9 @@ For `cut` the flags `-d` and `-f` indicate the delimiter and field
 # CONDITIONALS
 
 The basic conditional statement is `if`. Apart from syntax differences, the
-usage of the conditional construct is same as other languages.
+usage of the conditional construct is same as other languages. Conditionals
+help you to execute commands only when certain conditions are
+met.
 
 ```bash
 myfavnumber=34
@@ -201,7 +203,11 @@ if [ $myfavnumber -eq 34 ];then echo "My favorite number is $myfavnumber";fi
 ```
 
 `if/then` statement can be extended to `if/then/else` or `if/then/elif/else`
-to test more conditions. Let's move to *data* folder.
+to test more conditions.
+
+Let's move to *data* folder and create decision tree about your
+vegetable when there are rabbits around.
+
 
 ```bash
 cd data
@@ -210,11 +216,11 @@ nrabbits=`cat animals.txt | grep rabbit | wc -l`
 # nrabbits=$(cat animals.txt | grep rabbit | wc -l)
 
 if [ $nrabbits -le 2 ]; then
-    echo 'Less than 3 rabbits'
+    echo 'Nothing to worry about my vegetable garden'
 elif [ $nrabbits -gt 2 ] && [ $nrabbits -le 10 ]  ; then
-    echo '3 to 10 rabbits'
+    echo 'Yellow alert, check your garden'
 else
-    echo 'More than 10 rabbits'
+    echo 'Call animal control'
 fi
 
 echo "$nrabbits"
@@ -235,8 +241,8 @@ cp *.dat original-*.dat
 ```
 
 When `cp` receives more than two inputs the last should be a directory for
-`cp` to be able to copy all files prior to this directory. We can use 
-a loop to accomplish this task
+`cp` to be able to copy all files prior to this directory. So the previous
+command will not work. We can use a loop to accomplish this task
 
 ```bash
 for filename in basilisk.dat unicorn.dat #hit enter#
@@ -270,12 +276,26 @@ for filename in *.dat #hit enter#
 > done
  ```
 
+We can put an empty line before each filename when printing for a better
+look
+
+```bash
+echo *.dat
+
+for filename in *.dat #hit enter#
+> do
+> echo ""
+> echo $filename
+> head -n 100 $filename | tail -n 5  #this selects the lines 96-100
+> done
+ ```
+
 Say you have white spaces in your file names:
 
 ```bash
 cp basilisk.dat 'green snake.dat'
-cp unicorn.dat 'brown horse.dat'
-for filename in green snake.dat brown horse.dat #hit enter#
+cp unicorn.dat 'white horse.dat'
+for filename in green snake.dat white horse.dat #hit enter#
 > do
 >     echo $filename
 >     head -n 100 $filename | tail -n 20  #this selects the lines 81-100 
@@ -283,7 +303,7 @@ for filename in green snake.dat brown horse.dat #hit enter#
 
 #This should be
 
-for filename in 'green snake.dat' 'brown horse.dat' #hit enter#
+for filename in 'green snake.dat' 'white horse.dat' #hit enter#
 > do
 >     echo $filename
 >     head -n 100 $filename | tail -n 20  #this selects the lines 81-100 
@@ -387,7 +407,7 @@ Let's find lines that contain the word "not" and "The" :
 
 ```bash
 grep not haiku.txt
-grep The haikue.txt
+grep The haiku.txt
 ```
 
 When we searched for "The" two lines came up. In one the 
@@ -630,6 +650,8 @@ Repeat the routine to insert save and
 quit in vim.
 
 ```bash
+#!/usr/bin/env bash
+
 wc -l "$1" "$2" | sort -n
 ```
 
@@ -678,8 +700,9 @@ history | tail -n 5 > redo-commands.sh
 ```
 
 As you see it is natural to stack more than one command
-in a script. So let's write a script that takes any number of files
-(i.e. *.pdb* files) in molecules folder as input and
+in a script. So let's write a script that takes any
+number of files (i.e. *.pdb* files) in molecules folder as
+input and
 <br>
 1. Prints the file names that are provided 
 2. Prints out 4<sup>th</sup> line from each 
