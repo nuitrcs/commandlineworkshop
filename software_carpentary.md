@@ -377,7 +377,7 @@ the loop when the condition is true
  
 ```bash
 counter=0
-until [ $counter -ge 10 ]; do echo $counter; let counter=counter-1; done
+until [ $counter -ge 10 ]; do echo $counter; let counter=counter+1; done
 echo $counter
 ```
 
