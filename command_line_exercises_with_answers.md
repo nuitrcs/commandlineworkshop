@@ -280,7 +280,7 @@ vim ilikemyname.txt
 #-- Again you have many options here:
 
 #1- Hit "esc" to switch to the normal mode, move the cursor to the beginning of the 
-#number and hit "x" 6 times to erase the number on that line on character at a time
+#number and hit "x" 6 times to erase the number on that line one character at a time
 
 #or
 
