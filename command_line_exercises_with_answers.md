@@ -244,7 +244,7 @@ for i in `seq 10`; do mkdir $i; echo $i; sleep 3; done
 
 ### IV. VIM Text Editor Exercises
 
-**IV.01)** Print your name the one million times (each on one line) along with the line number to the file "ilikemyname.txt". Use VIM text editor to open "ilikemyname.txt" and delete the line 783219th line.
+**IV.01)** Print your name the one million times (each on one line) along with the line number to the file "ilikemyname.txt". Use VIM text editor to open "ilikemyname.txt" and delete 783219th line.
 
 
 ```bash
