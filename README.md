@@ -15,6 +15,8 @@ Windows, which is not Unix based, does not come with a bash shell.  You can [dow
 
 [Software Carpentry Command Line Workshop](http://swcarpentry.github.io/shell-novice/): workshop materials you can work through on your own; there are videos of non-Northwestern instructors giving the workshop at: [video 1](https://www.youtube.com/watch?v=hAHJ0xGKMBk) and [video 2](https://www.youtube.com/playlist?list=PLkBeePYo-_VCXtMNGDboOL66V-P2-jAoM)
 
+[Command Line Bootcamp](http://rik.smith-unna.com/command_line_bootcamp): an interactive tutorial in your browser, with all the essentials, by Richard Smith-Unna
+
 [Code Academy: Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line): interactive, online tutorial; you can access the basic content for free, but not the exercises.  A good, quick introduction to the basics like listing files and changing directories.
 
 [Practical Unix](http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=PracticalUnix): good reference for learning lots about using the command line environment, beyond what is covered in this workshop.
