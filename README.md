@@ -66,4 +66,6 @@ Windows, which is not Unix based, does not come with a bash shell.  You can [dow
 
 [Linux Command Line Cheat Sheet](https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/): another useful version with the essentials, plus some intermediate commands
 
+[vi Basics](https://www.cs.colostate.edu/helpdocs/vi.html): a good short intro explaining vi and a list of common commands, with the key commands highlighted.
+
 [VI Cheat Sheet](https://www.gosquared.com/resources/vi-cheat-sheet/): for using the VI command line text editor
