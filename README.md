@@ -8,7 +8,6 @@ On Mac OSX, which is based on a Unix environment, you can use the built in termi
 
 Windows, which is not Unix based, does not come with a bash shell.  You can [download Git Bash](https://git-scm.com/downloads), which will allow you to use both git and bash on a Windows computer.  Alternatively, if you have a 64-bit version of Windows 10, you can activate a bash shell.  See [these directions](https://www.howtogeek.com/265900/everything-you-can-do-with-windows-10s-new-bash-shell/).  The latter option is not recommended for those who are not confident in their use of and understanding of the Windows operating system.
 
-
 # Exercises
 
 [Exercises](/command_line_exercises.md) and [Exercise Solutions](/command_line_exercises_with_answers.md) are written specifically for a linux system (like Quest).  If you are working on a Mac or Windows computer, the exercises may not be relevant.
@@ -25,7 +24,7 @@ Windows, which is not Unix based, does not come with a bash shell.  You can [dow
 
 [Software Carpentry Command Line Workshop](http://swcarpentry.github.io/shell-novice/): workshop materials you can work through on your own; there are videos of non-Northwestern instructors giving the workshop at: [video 1](https://www.youtube.com/watch?v=hAHJ0xGKMBk) and [video 2](https://www.youtube.com/playlist?list=PLkBeePYo-_VCXtMNGDboOL66V-P2-jAoM)
 
-[Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial) by Michael Hartl, covers similar material to the two resource above.
+[Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial) by Michael Hartl, covers similar material to the two resources above.
 
 [Conquering the Command Line](http://conqueringthecommandline.com/book) by Mark Bates is organized by command with subsections organized by the options for the commands.  Makes for a clear reference with easy to navigate table of contents.
 
@@ -60,11 +59,13 @@ Windows, which is not Unix based, does not come with a bash shell.  You can [dow
 
 
 
-## Cheat Sheets
+## Cheat Sheets/Reference Sheets
 
 [Command Line Cheat Sheet](https://www.git-tower.com/blog/command-line-cheat-sheet/) with just the essentials, plus short explanations of key concepts
 
 [Linux Command Line Cheat Sheet](https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/): another useful version with the essentials, plus some intermediate commands
+
+[vi Handout](https://nuitrcs.github.io/commandlineworkshop/vibasics.pdf): handout from the workshop
 
 [vi Basics](https://www.cs.colostate.edu/helpdocs/vi.html): a good short intro explaining vi and a list of common commands, with the key commands highlighted.
 
