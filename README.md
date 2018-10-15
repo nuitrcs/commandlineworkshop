@@ -6,13 +6,14 @@ This workshop teaches the basics of the bash shell.  Many of the commands are si
 
 On Mac OSX, which is based on a Unix environment, you can use the built in terminal program (found in the Utilities folder of the Applications folder).
 
-Windows, which is not Unix based, does not come with a bash shell.  You can [download Git Bash](https://git-scm.com/downloads), which will allow you to use both git and bash on a Windows computer.  Alternatively, if you have a 64-bit version of Windows 10, you can activate a bash shell.  See [these directions](https://www.howtogeek.com/265900/everything-you-can-do-with-windows-10s-new-bash-shell/).  The latter option is not recommended for those who are not confident in their use of and understanding of the Windows operating system.
+Windows, which is not Unix based, does not come with a bash shell.  Please [install GitBash](https://workshops.rcs.northwestern.edu/install/bash/).
 
 # Exercises
 
+[DataCamp: Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science) is a free online interactive tutorial with exercises.  This is recommended for more practice and a review of material covered in the workshop (plus probably things we didn't get to).
+
 [Exercises](/command_line_exercises.md) and [Exercise Solutions](/command_line_exercises_with_answers.md) are written specifically for a linux system (like Quest).  If you are working on a Mac or Windows computer, the exercises may not be relevant.
 
-[DataCamp: Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science) is a free online interactive tutorial with exercises.  This is recommended for more practice and a review of material covered in the workshop (plus probably things we didn't get to).
 
 # Resources
 
@@ -70,3 +71,5 @@ Windows, which is not Unix based, does not come with a bash shell.  You can [dow
 [vi Basics](https://www.cs.colostate.edu/helpdocs/vi.html): a good short intro explaining vi and a list of common commands, with the key commands highlighted.
 
 [VI Cheat Sheet](https://www.gosquared.com/resources/vi-cheat-sheet/): for using the VI command line text editor
+
+[Bite Size Command Line](https://jvns.ca/blog/2018/08/05/new-zine--bite-size-command-line/) by Julia Evans -- a short zine with essential commands.  Buy it for $10.
