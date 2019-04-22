@@ -8,20 +8,14 @@ On Mac OSX, which is based on a Unix environment, you can use the built in termi
 
 Windows, which is not Unix based, does not come with a bash shell.  Please [install GitBash](https://workshops.rcs.northwestern.edu/install/bash/).
 
-# Exercises
-
-[DataCamp: Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science) is a free online interactive tutorial with exercises.  This is recommended for more practice and a review of material covered in the workshop (plus probably things we didn't get to).
-
-[Exercises](/command_line_exercises.md) and [Exercise Solutions](/command_line_exercises_with_answers.md) are written specifically for a linux system (like Quest).  If you are working on a Mac or Windows computer, the exercises may not be relevant.
-
 
 # Resources
+
+NOTE: [Exercises](/command_line_exercises.md) and [Exercise Solutions](/command_line_exercises_with_answers.md) in this repository are written specifically for a linux system (like Quest).  If you are working on a Mac or Windows computer, the exercises may not be relevant.
 
 ## Tutorials
 
 ### Introductory/General
-
-[DataCamp: Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science): Free online course from DataCamp
 
 [Software Carpentry Command Line Workshop](http://swcarpentry.github.io/shell-novice/): workshop materials you can work through on your own; there are videos of non-Northwestern instructors giving the workshop at: [video 1](https://www.youtube.com/watch?v=hAHJ0xGKMBk) and [video 2](https://www.youtube.com/playlist?list=PLkBeePYo-_VCXtMNGDboOL66V-P2-jAoM)
 
