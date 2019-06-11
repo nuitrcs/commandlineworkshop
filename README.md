@@ -52,7 +52,7 @@ NOTE: [Exercises](/command_line_exercises.md) and [Exercise Solutions](/command_
 
 [Mac OSX Snippets](https://github.com/herrbischoff/awesome-macos-command-line): useful shell commands specific to Macs.  Again, be careful.
 
-[Awesome Shell](https://github.com/alebcay/awesome-shell): Lots of 
+[Awesome Shell](https://github.com/alebcay/awesome-shell): A curated list of awesome command-line frameworks, toolkits, guides and gizmos.
 
 
 
