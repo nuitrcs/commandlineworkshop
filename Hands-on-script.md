@@ -51,6 +51,7 @@ cd ..     # ".." means go one level up
 cd ../..  # "../.." means go two level up
 cd ~      # "~" is a shortcut for home folder.
 cd /      # "/" means go to root (upper most) level
+cd -      # "-" means go to the previous directory
 ```
 
 To explore what is inside a folder, you should use `ls` (list). Let's
