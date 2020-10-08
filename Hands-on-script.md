@@ -22,24 +22,24 @@ pwd
 ```
 
 We will navigate in our file system using `cd` (change directory) command.
-We move to shell-novice-data folder that you have placed in your
+We move to data-shell folder that you have placed in your
 computer. Assuming it is in your Desktop folder, let's change the directory
-to shell-novice-data and issue `pwd` command:
+to data-shell and issue `pwd` command:
 
 ```bash
-cd Desktop/shell-novice-data
+cd Desktop/data-shell
 pwd
 ```
 
 When you are typing long commands, first write couple of characters then
 hit <kbd>TAB</kbd> key for auto-completion.
 
-Here we moved between folders using a relative path, i.e. "Desktop/shell-novice-data".
+Here we moved between folders using a relative path, i.e. "Desktop/data-shell".
 You could have also used the absolute path if you know it (i.e. the result
 of `pwd` command)
 
 ```bash
-cd /absolute/path/to/shell-novice-data
+cd /absolute/path/to/data-shell
 ```
 
 There are also some special characters you can utilize in navigation:
@@ -55,10 +55,10 @@ cd -      # "-" means go to the previous directory
 ```
 
 To explore what is inside a folder, you should use `ls` (list). Let's
-navigate to shell-novice-data folder and see what is inside.
+navigate to data-shell folder and see what is inside.
 
 ```bash
-cd /absolute/path/to/shell-novice-data
+cd /absolute/path/to/data-shell
 ls
 cd data-shell
 ls
@@ -99,7 +99,7 @@ see the definition of the available flags for the `<command>`.
 
 ```bash
 pwd
-cd /absolute/path/to/shell-novice-data/data-shell
+cd /absolute/path/to/data-shell
 ls -lh
 cp notes.txt notes-copy.txt
 cp -r cretures creatures-copy
